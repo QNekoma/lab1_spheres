@@ -1,0 +1,13 @@
+# Doxyfile для лабораторной работы №1
+
+PROJECT_NAME           = "Генератор точек между сферами"
+PROJECT_BRIEF          = "Лабораторная работа №1"
+OUTPUT_DIRECTORY       = docs
+GENERATE_LATEX         = NO
+GENERATE_HTML          = YES
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+INPUT                  = src
+FILE_PATTERNS          = *.h *.cpp
+RECURSIVE              = YES
