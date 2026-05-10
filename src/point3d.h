@@ -1,33 +1,22 @@
- /**
- * @file point3d.cpp
- * @brief Реализация методов структуры point3d
- * @author Студент
- * @date 2026
+/**
+ * @file point3d.h
+ * @brief Определение структуры для хранения трёхмерной точки
  */
 
-#include "point3d.h"
+#ifndef POINT3D_H
+#define POINT3D_H
 
-point3d::point3d(double x, double y, double z)
-    : x(x), y(y), z(z)
-{
-}
+#include <iostream>
 
-void point3d::print() const
+struct point3d
 {
-    std::cout << "(" << x << ", " << y << ", " << z << ")";
-}
+    double x, y, z;
 
-double point3d::getBackX() const
-{
-    return x;
-}
+    point3d(double x = 0.0, double y = 0.0, double z = 0.0);
+    void print() const;
+    double getBackX() const;
+    double getBackY() const;
+    double getBackZ() const;
+};
 
-double point3d::getBackY() const
-{
-    return y;
-}
-
-double point3d::getBackZ() const
-{
-    return z;
-}
+#endif // POINT3D_H
